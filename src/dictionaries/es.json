@@ -47,7 +47,7 @@
       {
         "n": "01",
         "title": "Sitios Jamstack",
-        "text": "Páginas rápidas y ligeras, fáciles de publicar y con poco mantenimiento."
+        "text": "Sitios rápidos y fáciles de mantener, listos para publicar."
       },
       {
         "n": "02",
@@ -57,7 +57,7 @@
       {
         "n": "03",
         "title": "Chatbot de WhatsApp",
-        "text": "Solo cuando tu negocio lo necesite, por ejemplo para atender dudas o agendar citas."
+        "text": "Responde y agenda por WhatsApp cuando tu negocio lo necesite."
       }
     ]
   },
@@ -123,8 +123,8 @@
     "eyebrow": "Sobre mí",
     "title": "Hola, soy Hetor",
     "paragraphs": [
-      "Soy desarrollador web y estudio programación. Trabajo con HTML5, CSS, JavaScript, Node.js, React, Next.js y Tailwind CSS.",
-      "Me gusta conectar sitios rápidos a APIs y servicios externos para que la información se mantenga al día, y sumar bases de datos o un chatbot de WhatsApp cuando el proyecto lo necesita.",
+      "Soy desarrollador web y estudio programación. Me gusta cuidar un proyecto de principio a fin.",
+      "Busco que un sitio sea rápido, claro y fácil de mantener, y sumo bases de datos o un chatbot cuando de verdad ayudan.",
       "Mis proyectos son ejemplos de lo que puedo hacer. Esta misma página está hecha con Next.js y Tailwind CSS."
     ],
     "avatarAlt": "Foto de perfil de Hetor"
@@ -137,22 +137,22 @@
     "options": {
       "static": {
         "title": "Sitio estático",
-        "text": "Páginas rápidas, listas para publicar y con poco mantenimiento.",
+        "text": "Informativo: tu negocio, servicios y contacto.",
         "label": "sitio estático"
       },
       "api": {
         "title": "Uso de APIs",
-        "text": "Información que se actualiza sola desde servicios externos.",
+        "text": "Datos de otros servicios, siempre al día.",
         "label": "uso de APIs"
       },
       "chatbot": {
         "title": "Chatbot",
-        "text": "Atiende dudas o agenda citas por WhatsApp.",
+        "text": "Responde dudas o agenda citas.",
         "label": "chatbot de WhatsApp"
       },
       "database": {
         "title": "Uso de base de datos",
-        "text": "Para guardar información propia de tu negocio.",
+        "text": "Guarda clientes, pedidos o lo que necesites.",
         "label": "uso de base de datos"
       },
       "unsure": {

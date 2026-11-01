@@ -7,6 +7,15 @@ import Cta from '@/components/Cta';
 
 const SECCIONES = ['services', 'projects', 'about', 'packages', 'faq'];
 
+/* Guarda qué sección se está viendo antes de cambiar de idioma (la lee RestoreScroll). */
+function guardarPosicion() {
+  try {
+    const secciones = [...document.querySelectorAll('main section[id]')];
+    const actual = secciones.filter((x) => x.getBoundingClientRect().top <= 120).pop();
+    if (actual) sessionStorage.setItem('anchor', JSON.stringify({ id: actual.id, offset: -actual.getBoundingClientRect().top }));
+  } catch {}
+}
+
 export default function Header({ lang, locales, dict, brand, whatsapp }) {
   const [abierto, setAbierto] = useState(false);
   const pathname = usePathname() || `/${lang}`;
@@ -36,6 +45,8 @@ export default function Header({ lang, locales, dict, brand, whatsapp }) {
                 key={l}
                 href={`/${l}${resto}`}
                 hrefLang={l}
+                scroll={false}
+                onClick={guardarPosicion}
                 aria-current={l === lang ? 'true' : undefined}
                 className={`rounded-full px-2.5 py-1 transition-colors ${
                   l === lang ? 'bg-violet text-on-accent' : 'text-muted hover:text-fg'

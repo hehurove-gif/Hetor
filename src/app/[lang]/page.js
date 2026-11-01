@@ -12,6 +12,7 @@ import Packages from '@/components/Packages';
 import Faq from '@/components/Faq';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import RestoreScroll from '@/components/RestoreScroll';
 import { getDictionary, hasLocale } from './dictionaries';
 
 export default async function Home({ params }) {
@@ -32,13 +33,14 @@ export default async function Home({ params }) {
         <Projects dict={dict}>
           <GithubDemo dict={dict} lang={lang} />
         </Projects>
-        <Process dict={dict} />
         <About dict={dict} />
+        <Process dict={dict} />
         <Packages dict={dict} lang={lang} />
         <Faq dict={dict} />
         <Contact dict={dict} whatsapp={whatsapp} />
       </main>
       <Footer dict={dict} />
+      <RestoreScroll lang={lang} />
     </>
   );
 }

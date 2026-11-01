@@ -47,7 +47,7 @@
       {
         "n": "01",
         "title": "Jamstack websites",
-        "text": "Fast, lightweight pages that are easy to publish and need little maintenance."
+        "text": "Fast sites that are easy to maintain and ready to publish."
       },
       {
         "n": "02",
@@ -57,7 +57,7 @@
       {
         "n": "03",
         "title": "WhatsApp chatbot",
-        "text": "Only when your business needs it, for example to answer questions or book appointments."
+        "text": "Answers and books through WhatsApp when your business needs it."
       }
     ]
   },
@@ -123,8 +123,8 @@
     "eyebrow": "About",
     "title": "Hi, I'm Hetor",
     "paragraphs": [
-      "I'm a web developer and a programming student. I work with HTML5, CSS, JavaScript, Node.js, React, Next.js and Tailwind CSS.",
-      "I like connecting fast sites to APIs and external services so the information stays current, and adding databases or a WhatsApp chatbot when a project needs them.",
+      "I'm a web developer and a programming student. I like looking after a project from start to finish.",
+      "I aim for sites that are fast, clear and easy to maintain, and I add databases or a chatbot only when they really help.",
       "My projects are examples of what I can do. This very page is built with Next.js and Tailwind CSS."
     ],
     "avatarAlt": "Profile picture of Hetor"
@@ -137,22 +137,22 @@
     "options": {
       "static": {
         "title": "Static site",
-        "text": "Fast pages, ready to publish and low maintenance.",
+        "text": "Informational: your business, services and contact.",
         "label": "static site"
       },
       "api": {
         "title": "API usage",
-        "text": "Information that updates itself from external services.",
+        "text": "Data from other services, always up to date.",
         "label": "API usage"
       },
       "chatbot": {
         "title": "Chatbot",
-        "text": "Answers questions or books appointments on WhatsApp.",
+        "text": "Answers questions or books appointments.",
         "label": "WhatsApp chatbot"
       },
       "database": {
         "title": "Database usage",
-        "text": "To store your business's own information.",
+        "text": "Stores customers, orders or whatever you need.",
         "label": "database usage"
       },
       "unsure": {

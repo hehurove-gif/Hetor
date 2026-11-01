@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { OPTIONS, alternar, bloqueo, construirMensaje } from '@/lib/plan';
 import { whatsappLink } from '@/lib/whatsapp';
 
@@ -8,6 +8,21 @@ export default function PlanBuilder({ dict, lang, whatsappNumber }) {
   const p = dict.packages;
   const [seleccion, setSeleccion] = useState([]);
   const [copiado, setCopiado] = useState(false);
+
+  // Al cambiar de idioma la página se vuelve a montar: se guarda la selección (ids, no depende del idioma).
+  useEffect(() => {
+    try {
+      const g = JSON.parse(sessionStorage.getItem('plan') || '[]');
+      if (Array.isArray(g)) setSeleccion(OPTIONS.filter((id) => g.includes(id)));
+    } catch {}
+  }, [lang]);
+  function elegir(id) {
+    setSeleccion((s) => {
+      const n = alternar(s, id);
+      try { sessionStorage.setItem('plan', JSON.stringify(n)); } catch {}
+      return n;
+    });
+  }
 
   const etiquetas = Object.fromEntries(OPTIONS.map((id) => [id, p.options[id].label]));
   const mensaje = construirMensaje(seleccion, etiquetas, p.messageTemplate, '', lang, p.messageUnsure);
@@ -34,12 +49,13 @@ export default function PlanBuilder({ dict, lang, whatsappNumber }) {
             const o = p.options[id];
             const marcado = seleccion.includes(id);
             const motivo = bloqueo(seleccion, id);
+            const atenuado = Boolean(motivo) || (id !== 'unsure' && seleccion.includes('unsure'));
             return (
               <label
                 key={id}
                 className={`relative flex min-w-0 gap-3 rounded-2xl border p-4 transition-colors ${
-                  motivo
-                    ? 'cursor-not-allowed border-transparent bg-black/10 text-muted dark:bg-black/50'
+                  atenuado
+                    ? `border-transparent bg-black/10 text-muted dark:bg-black/50 ${motivo ? 'cursor-not-allowed' : 'cursor-pointer hover:border-cyan/60'}`
                     : `cursor-pointer hover:border-cyan/60 ${marcado ? 'border-cyan bg-cyan/10' : 'border-line bg-surface'}`
                 }`}
               >
@@ -48,7 +64,7 @@ export default function PlanBuilder({ dict, lang, whatsappNumber }) {
                   className="peer sr-only"
                   checked={marcado}
                   disabled={Boolean(motivo)}
-                  onChange={() => setSeleccion((s) => alternar(s, id))}
+                  onChange={() => elegir(id)}
                 />
                 <span
                   aria-hidden="true"
