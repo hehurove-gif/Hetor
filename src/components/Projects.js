@@ -2,10 +2,16 @@ import Image from 'next/image';
 import Section from '@/components/Section';
 import { site } from '@/site.config';
 
-function Logo({ src, alt, href, initial }) {
+function Logo({ src, alt, href, initial, oscuro }) {
   const caja = 'h-14 w-14 shrink-0 rounded-xl border border-line';
   if (src) {
-    const img = <Image src={src} alt={alt} width={56} height={56} className={`${caja} object-cover`} />;
+    const img = <Image
+      src={src}
+      alt={alt}
+      width={56}
+      height={56}
+      className={oscuro ? `${caja} bg-[#14171d] object-contain p-1.5` : `${caja} object-cover`}
+    />;
     return href ? (
       <a href={href} target="_blank" rel="noopener noreferrer" aria-label={alt} className="shrink-0">
         {img}
@@ -21,11 +27,11 @@ function Logo({ src, alt, href, initial }) {
   );
 }
 
-function Tarjeta({ tag, title, text, stack, href, linkLabel, logo, logoAlt }) {
+function Tarjeta({ tag, title, text, stack, href, linkLabel, logo, logoAlt, logoOscuro }) {
   return (
     <article className="flex min-w-0 flex-col rounded-2xl border border-line bg-surface p-6 transition-colors hover:border-violet/60">
       <div className="flex items-center gap-4">
-        <Logo src={logo} alt={logoAlt} href={href} initial={title.charAt(0)} />
+        <Logo src={logo} alt={logoAlt} href={href} initial={title.charAt(0)} oscuro={logoOscuro} />
         <div className="min-w-0">
           <p className="font-mono text-xs text-cyan">{tag}</p>
           <h3 className="mt-1 break-words text-2xl font-semibold">{title}</h3>
@@ -63,7 +69,7 @@ export default function Projects({ dict, children }) {
         {site.showKOA && (
           <Tarjeta {...p.koa} href={site.koaUrl} linkLabel={p.visit} logo="/clients/koa-logo.png" logoAlt={p.koa.logoAlt} />
         )}
-        {site.xhockUrl && <Tarjeta {...p.xhock} href={site.xhockUrl} linkLabel={p.visit} />}
+        {site.xhockUrl && <Tarjeta {...p.xhock} href={site.xhockUrl} linkLabel={p.visit} logo="/clients/koa-xhock-logo.png" logoAlt={p.xhock.logoAlt} logoOscuro />}
         <Tarjeta
           {...p.dopta}
           href={site.doptaUrl || undefined}
