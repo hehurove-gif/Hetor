@@ -1,0 +1,20 @@
+{
+  // Configuración del Worker en Cloudflare. El nombre debe coincidir con el proyecto "hetor".
+  "name": "hetor",
+  "compatibility_date": "2026-10-31",
+
+  // Carpeta que genera `npm run build` (sitio estático).
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+
+  // Registros (logs) en el panel de Cloudflare: Workers & Pages → hetor → Observability.
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "persist": true
+    }
+  }
+}

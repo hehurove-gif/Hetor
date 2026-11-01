@@ -56,3 +56,5 @@ Genera la carpeta `out/`: HTML, CSS y JS listos para subir a cualquier hosting (
 - **GitHub demo:** la lista se genera al compilar, así que se actualiza en cada despliegue.
 - **Variables:** define `NEXT_PUBLIC_SITE_URL` (p. ej. `https://hetor.dev`) en el panel del hosting; sin ella, las imágenes de vista previa apuntan a localhost.
 - **Cloudflare Pages:** conecta el repositorio de GitHub; Build command `npm run build`, Build output directory `out`. Cada `git push` publica solo. `public/_headers` declara el tipo de la imagen de vista previa.
+- **Cloudflare Workers (como está publicado):** `wrangler.jsonc` define el nombre, la carpeta `out` y los registros (observability). Con él, Deploy command = `npx wrangler deploy` y Preview command = `npx wrangler versions upload`.
+- **GITHUB_READ_TOKEN (opcional):** en Cloudflare, Settings → Build → Variables and secrets, tipo **Secret**. Token de GitHub de solo lectura (fine-grained, repos públicos, sin permisos extra).
