@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "title": "Hetor | Jamstack web development",
+    "description": "Fast websites connected to APIs, with information that updates itself. Jamstack web development and, when needed, a WhatsApp chatbot."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "language": "Language",
+    "home": "Hetor, home"
+  },
+  "nav": {
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "packages": "Packages",
+    "faq": "FAQ"
+  },
+  "cta": {
+    "whatsapp": "Let's talk on WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "quote": "Get a quote on WhatsApp",
+    "projects": "See projects",
+    "missing": "WhatsApp number not configured yet (see README)"
+  },
+  "whatsappMessage": "Hi Hetor, I saw your website and I'd like to talk about building a site.",
+  "hero": {
+    "eyebrow": "Hi, I'm Hetor",
+    "title": "Jamstack web development",
+    "subtitle": "I build fast websites that connect to APIs to show up-to-date information, with no need to set up and maintain a database.",
+    "stackLabel": "I work with",
+    "stack": [
+      "HTML5",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    "photoAlt": "Profile picture of Hetor"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "What I can do for you",
+    "items": [
+      {
+        "n": "01",
+        "title": "Jamstack websites",
+        "text": "Fast, lightweight pages that are easy to publish and need little maintenance."
+      },
+      {
+        "n": "02",
+        "title": "API-connected websites",
+        "text": "Live information (tournaments, repositories, weather and more) inside your site, with caching and error handling."
+      },
+      {
+        "n": "03",
+        "title": "WhatsApp chatbot",
+        "text": "Only when your business needs it, for example to answer questions or book appointments."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "What I've built",
+    "visit": "Visit site",
+    "koa": {
+      "tag": "Website · Jamstack",
+      "title": "KOA eSports",
+      "text": "Website for an esports organization (Super Smash Bros. Ultimate). Tournaments update themselves from the Start.gg API through a serverless function, with caching and error handling.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vercel Serverless",
+        "Start.gg API"
+      ],
+      "logoAlt": "KOA eSports logo"
+    },
+    "dopta": {
+      "tag": "Website",
+      "title": "DOPTA",
+      "text": "Web version of a dog adoption marketplace in Mexico City.",
+      "stack": []
+    }
+  },
+  "github": {
+    "eyebrow": "Live",
+    "title": "My GitHub repositories",
+    "text": "This section is built from the GitHub API every time I publish a new version of the site.",
+    "empty": "There are no public repositories to show yet.",
+    "error": "I couldn't load the repositories right now. Please try again later.",
+    "noDescription": "No description",
+    "updated": "Updated",
+    "profile": "View GitHub profile"
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "How we work",
+    "steps": [
+      {
+        "title": "We talk",
+        "text": "I learn about your business, what you need to show and what data you already have."
+      },
+      {
+        "title": "Proposal",
+        "text": "I explain what's included, the timeline and the cost before we start."
+      },
+      {
+        "title": "I build",
+        "text": "I share progress along the way so we can adjust in time."
+      },
+      {
+        "title": "Launch and support",
+        "text": "We put it online and I answer your questions on how to use it."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Hi, I'm Hetor",
+    "paragraphs": [
+      "I'm a web developer. I work with HTML5, CSS, JavaScript and Node.js, and I specialize in Jamstack sites connected to APIs.",
+      "I built the KOA eSports website, where tournaments update themselves from Start.gg.",
+      "This page is built with Next.js and Tailwind CSS."
+    ],
+    "avatarAlt": "Profile picture of Hetor"
+  },
+  "packages": {
+    "eyebrow": "Plans",
+    "title": "Build your project",
+    "intro": "Check what you need and I'll prepare the message so we can talk it over on WhatsApp.",
+    "legend": "What would your project include?",
+    "options": {
+      "static": {
+        "title": "Static site",
+        "text": "Fast pages, ready to publish and low maintenance.",
+        "label": "static site"
+      },
+      "api": {
+        "title": "API usage",
+        "text": "Information that updates itself from external services.",
+        "label": "API usage"
+      },
+      "chatbot": {
+        "title": "Chatbot",
+        "text": "Answers questions or books appointments on WhatsApp.",
+        "label": "WhatsApp chatbot"
+      },
+      "database": {
+        "title": "Database usage",
+        "text": "To store your business's own information.",
+        "label": "database usage"
+      }
+    },
+    "hints": {
+      "blockedByDatabase": "Not available with a database",
+      "blockedByStatic": "Not available with a static site",
+      "includedByDatabase": "Included with the database"
+    },
+    "previewLabel": "Your message",
+    "messageTemplate": "Hi Hetor, I saw your website and I'm interested in a project with: {items}. Can we talk it over?",
+    "send": "Send on WhatsApp",
+    "copy": "Copy message",
+    "copied": "Message copied",
+    "note": "The cost depends on what you need. Tell me your idea and I'll send you a quote.",
+    "pickOne": "Choose at least one option to build your message."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What is Jamstack?",
+        "a": "It's a way of building websites: fast, pre-generated pages that fetch data from APIs when needed instead of relying on a heavy server with a database."
+      },
+      {
+        "q": "Does my site update itself?",
+        "a": "If it connects to an API (for example tournaments or repositories), yes: the information refreshes automatically every so often."
+      },
+      {
+        "q": "Do I need a database?",
+        "a": "Not always. Many sites work with APIs alone. If your project needs to store its own information, we can talk about it."
+      },
+      {
+        "q": "Can you build a WhatsApp chatbot?",
+        "a": "Yes, but only when your business really needs it, for example to answer questions or book appointments."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Message me on WhatsApp with a general idea of what you need and I'll reply with questions to understand the project."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Shall we talk?",
+    "text": "Tell me what you need and I'll reply on WhatsApp."
+  },
+  "footer": {
+    "made": "Built with Next.js and Tailwind CSS.",
+    "rights": "All rights reserved.",
+    "email": "Email"
+  },
+  "og": {
+    "alt": "Hetor, Jamstack web development",
+    "tagline": "Jamstack web development"
+  }
+}

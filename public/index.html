@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hetor</title>
+<meta name="robots" content="noindex">
+<link rel="alternate" hreflang="es" href="/es">
+<link rel="alternate" hreflang="en" href="/en">
+<link rel="alternate" hreflang="x-default" href="/es">
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,sans-serif;background:#0a0c10;color:#e8eaf0}a{color:#22d3ee;margin:0 .75rem}</style>
+<script>
+/* Detección de idioma (reemplaza al antiguo proxy). Orden:
+   1) la elección guardada del visitante (localStorage "lang"),
+   2) el idioma del navegador,
+   3) español por defecto; si el idioma no existe aquí, inglés.
+   Para agregar un idioma: añádelo a SOPORTADOS y crea su página en src/dictionaries. */
+(function () {
+  var SOPORTADOS = ['es', 'en'], DEFECTO = 'es', RESPALDO = 'en';
+  var destino = null;
+  try { var g = localStorage.getItem('lang'); if (SOPORTADOS.indexOf(g) > -1) destino = g; } catch (e) {}
+  if (!destino) {
+    var prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']);
+    for (var i = 0; i < prefs.length && !destino; i++) {
+      var base = String(prefs[i]).toLowerCase().split('-')[0];
+      if (SOPORTADOS.indexOf(base) > -1) destino = base;
+    }
+    if (!destino) destino = prefs.length && prefs[0] ? RESPALDO : DEFECTO;
+  }
+  location.replace('/' + destino + location.search + location.hash);
+})();
+</script>
+</head>
+<body>
+<noscript><p><a href="/es">Español</a><a href="/en">English</a></p></noscript>
+</body>
+</html>

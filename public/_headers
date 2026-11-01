@@ -1,0 +1,5 @@
+# Cloudflare Pages / Netlify: la imagen de vista previa no tiene extensión, así que se declara su tipo.
+/es/opengraph-image
+  Content-Type: image/png
+/en/opengraph-image
+  Content-Type: image/png

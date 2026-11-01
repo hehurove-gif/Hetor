@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "title": "Hetor | Desarrollo web Jamstack",
+    "description": "Sitios web rápidos conectados a APIs, con información que se actualiza sola. Desarrollo web Jamstack y, cuando hace falta, chatbot de WhatsApp."
+  },
+  "a11y": {
+    "skip": "Saltar al contenido",
+    "menu": "Menú",
+    "language": "Idioma",
+    "home": "Hetor, inicio"
+  },
+  "nav": {
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "packages": "Paquetes",
+    "faq": "Preguntas"
+  },
+  "cta": {
+    "whatsapp": "Hablemos por WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "quote": "Cotiza por WhatsApp",
+    "projects": "Ver proyectos",
+    "missing": "Falta configurar el número de WhatsApp (ver README)"
+  },
+  "whatsappMessage": "Hola Hetor, vi tu página y me gustaría platicar sobre un sitio web.",
+  "hero": {
+    "eyebrow": "Hola, soy Hetor",
+    "title": "Desarrollo web Jamstack",
+    "subtitle": "Construyo sitios rápidos que se conectan a APIs para mostrar información al día, sin necesidad de montar y mantener una base de datos.",
+    "stackLabel": "Trabajo con",
+    "stack": [
+      "HTML5",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    "photoAlt": "Foto de perfil de Hetor"
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Qué puedo hacer por ti",
+    "items": [
+      {
+        "n": "01",
+        "title": "Sitios Jamstack",
+        "text": "Páginas rápidas y ligeras, fáciles de publicar y con poco mantenimiento."
+      },
+      {
+        "n": "02",
+        "title": "Sitios conectados a APIs",
+        "text": "Información en vivo (torneos, repositorios, clima y más) dentro de tu sitio, con caché y manejo de errores."
+      },
+      {
+        "n": "03",
+        "title": "Chatbot de WhatsApp",
+        "text": "Solo cuando tu negocio lo necesite, por ejemplo para atender dudas o agendar citas."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "Lo que he construido",
+    "visit": "Ver sitio",
+    "koa": {
+      "tag": "Sitio web · Jamstack",
+      "title": "KOA eSports",
+      "text": "Sitio de una organización de eSports (Super Smash Bros. Ultimate). Los torneos se actualizan solos desde la API de Start.gg mediante una función serverless, con caché y manejo de errores.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vercel Serverless",
+        "Start.gg API"
+      ],
+      "logoAlt": "Logo de KOA eSports"
+    },
+    "dopta": {
+      "tag": "Sitio web",
+      "title": "DOPTA",
+      "text": "Versión web de un marketplace de adopción de perros en la Ciudad de México.",
+      "stack": []
+    }
+  },
+  "github": {
+    "eyebrow": "En vivo",
+    "title": "Mis repositorios en GitHub",
+    "text": "Esta sección se genera con la API de GitHub cada vez que publico una nueva versión del sitio.",
+    "empty": "Todavía no hay repositorios públicos para mostrar.",
+    "error": "No pude cargar los repositorios en este momento. Intenta de nuevo más tarde.",
+    "noDescription": "Sin descripción",
+    "updated": "Actualizado",
+    "profile": "Ver perfil en GitHub"
+  },
+  "process": {
+    "eyebrow": "Proceso",
+    "title": "Cómo trabajamos",
+    "steps": [
+      {
+        "title": "Platicamos",
+        "text": "Entiendo tu negocio, qué necesitas mostrar y qué datos ya tienes."
+      },
+      {
+        "title": "Propuesta",
+        "text": "Te explico qué incluye, tiempos y costo antes de empezar."
+      },
+      {
+        "title": "Construyo",
+        "text": "Te voy mostrando avances para ajustar a tiempo."
+      },
+      {
+        "title": "Publico y acompaño",
+        "text": "Lo dejamos en línea y resuelvo tus dudas de uso."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Hola, soy Hetor",
+    "paragraphs": [
+      "Soy desarrollador web. Trabajo con HTML5, CSS, JavaScript y Node.js, y me especializo en sitios Jamstack conectados a APIs.",
+      "Construí el sitio de KOA eSports, donde los torneos se actualizan solos desde Start.gg.",
+      "Esta página está hecha con Next.js y Tailwind CSS."
+    ],
+    "avatarAlt": "Foto de perfil de Hetor"
+  },
+  "packages": {
+    "eyebrow": "Planes",
+    "title": "Arma tu proyecto",
+    "intro": "Marca lo que necesitas y te preparo el mensaje para platicarlo por WhatsApp.",
+    "legend": "¿Qué incluiría tu proyecto?",
+    "options": {
+      "static": {
+        "title": "Sitio estático",
+        "text": "Páginas rápidas, listas para publicar y con poco mantenimiento.",
+        "label": "sitio estático"
+      },
+      "api": {
+        "title": "Uso de APIs",
+        "text": "Información que se actualiza sola desde servicios externos.",
+        "label": "uso de APIs"
+      },
+      "chatbot": {
+        "title": "Chatbot",
+        "text": "Atiende dudas o agenda citas por WhatsApp.",
+        "label": "chatbot de WhatsApp"
+      },
+      "database": {
+        "title": "Uso de base de datos",
+        "text": "Para guardar información propia de tu negocio.",
+        "label": "uso de base de datos"
+      }
+    },
+    "hints": {
+      "blockedByDatabase": "No disponible con base de datos",
+      "blockedByStatic": "No disponible con sitio estático",
+      "includedByDatabase": "Incluido con la base de datos"
+    },
+    "previewLabel": "Tu mensaje",
+    "messageTemplate": "Hola Hetor, vi tu página y me interesa un proyecto con: {items}. ¿Podemos platicarlo?",
+    "send": "Enviar por WhatsApp",
+    "copy": "Copiar mensaje",
+    "copied": "Mensaje copiado",
+    "note": "El costo depende de lo que necesites. Cuéntame tu idea y te cotizo.",
+    "pickOne": "Elige al menos una opción para armar tu mensaje."
+  },
+  "faq": {
+    "eyebrow": "Preguntas",
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Qué es Jamstack?",
+        "a": "Es una forma de construir sitios: páginas rápidas, generadas con anticipación, que obtienen datos de APIs cuando hace falta en lugar de depender de un servidor pesado con base de datos."
+      },
+      {
+        "q": "¿Mi sitio se actualiza solo?",
+        "a": "Si se conecta a una API (por ejemplo torneos o repositorios), sí: la información se refresca automáticamente cada cierto tiempo."
+      },
+      {
+        "q": "¿Necesito una base de datos?",
+        "a": "No siempre. Muchos sitios funcionan solo con APIs. Si tu proyecto necesita guardar información propia, lo platicamos."
+      },
+      {
+        "q": "¿Puedes hacer un chatbot de WhatsApp?",
+        "a": "Sí, pero solo cuando tu negocio realmente lo necesita, por ejemplo para atender dudas o agendar citas."
+      },
+      {
+        "q": "¿Cómo empezamos?",
+        "a": "Escríbeme por WhatsApp con una idea general de lo que necesitas y te respondo con preguntas para entender el proyecto."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "¿Hablamos?",
+    "text": "Cuéntame qué necesitas y te respondo por WhatsApp."
+  },
+  "footer": {
+    "made": "Hecho con Next.js y Tailwind CSS.",
+    "rights": "Todos los derechos reservados.",
+    "email": "Correo"
+  },
+  "og": {
+    "alt": "Hetor, desarrollo web Jamstack",
+    "tagline": "Desarrollo web Jamstack"
+  }
+}

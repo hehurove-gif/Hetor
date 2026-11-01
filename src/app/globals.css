@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Tema: sigue el dispositivo (oscuro por defecto, claro si el sistema lo pide).
+   Paleta: fondo oscuro, acentos neón cian y violeta usados con moderación. */
+:root {
+  --bg: #0a0c10;
+  --bg-soft: #0f1218;
+  --surface: #12161e;
+  --line: #232a37;
+  --fg: #e8eaf0;
+  --muted: #98a1b3;
+  --cyan: #22d3ee;
+  --violet: #a78bfa;
+  --on-accent: #06121a;
+  --glow: 22%;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f7fb;
+    --bg-soft: #eef0f6;
+    --surface: #ffffff;
+    --line: #dde1ea;
+    --fg: #0e1220;
+    --muted: #555e72;
+    --cyan: #0e7490;
+    --violet: #6d28d9;
+    --on-accent: #ffffff;
+    --glow: 12%;
+    color-scheme: light;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-soft: var(--bg-soft);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-cyan: var(--cyan);
+  --color-violet: var(--violet);
+  --color-on-accent: var(--on-accent);
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Resplandor estático de la portada (sin animación). */
+.hero-glow {
+  background:
+    radial-gradient(60% 55% at 15% 0%, color-mix(in srgb, var(--cyan) var(--glow), transparent), transparent 70%),
+    radial-gradient(50% 50% at 92% 8%, color-mix(in srgb, var(--violet) var(--glow), transparent), transparent 70%);
+}
+
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 6px; }
+
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] > summary .faq-icon { transform: rotate(45deg); }
+
+::selection { background: color-mix(in srgb, var(--violet) 40%, transparent); }
