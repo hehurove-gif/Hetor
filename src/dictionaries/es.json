@@ -98,8 +98,12 @@
     "xhock": {
       "tag": "Sitio web · Base de datos · Refactorizando",
       "title": "XHOCK",
-      "text": "Venta de boletos y registro de jugadores para un torneo internacional de hockey sobre hielo en Cancún. Es un proyecto en refactorización: me encargo de corregirlo y mejorarlo.",
+      "text": "Plataforma de venta de boletos y registro de jugadores para un torneo internacional de hockey sobre hielo en Cancún, con equipos de Canadá, Estados Unidos y México. Estoy a cargo de su refactorización: corrijo errores, ordeno el código y mejoro cómo funciona por dentro.",
       "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Servidor",
         "Base de datos",
         "Refactorización"
       ]

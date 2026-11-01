@@ -98,8 +98,12 @@
     "xhock": {
       "tag": "Website · Database · Refactoring",
       "title": "XHOCK",
-      "text": "Ticket sales and player registration for an international ice hockey tournament in Cancún. A refactoring project: I'm in charge of fixing and improving it.",
+      "text": "Ticket sales and player registration platform for an international ice hockey tournament in Cancún, with teams from Canada, the United States and Mexico. I'm in charge of its refactoring: fixing bugs, cleaning up the code and improving how it works under the hood.",
       "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Server",
         "Database",
         "Refactoring"
       ]
