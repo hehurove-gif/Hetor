@@ -88,7 +88,20 @@
       "title": "DOPTA",
       "text": "Web version of a dog adoption marketplace in Mexico City. Work in progress: it uses a database.",
       "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Android Studio",
         "Database"
+      ]
+    },
+    "xhock": {
+      "tag": "Website · Database · Refactoring",
+      "title": "XHOCK",
+      "text": "Ticket sales and player registration for an international ice hockey tournament in Cancún. A refactoring project: I'm in charge of fixing and improving it.",
+      "stack": [
+        "Database",
+        "Refactoring"
       ]
     }
   },
@@ -209,7 +222,13 @@
   "footer": {
     "made": "Built with Next.js and Tailwind CSS.",
     "rights": "All rights reserved.",
-    "email": "Email"
+    "email": "Email",
+    "tagline": "Fast, clear websites with just what your business needs.",
+    "blurb": "If you have an idea, even a half-formed one, message me and we'll shape it together.",
+    "nav": "Sections",
+    "contact": "Contact",
+    "social": "Social",
+    "whatsapp": "Message me on WhatsApp"
   },
   "og": {
     "alt": "Hetor, Jamstack web development",

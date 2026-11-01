@@ -63,6 +63,7 @@ export default function Projects({ dict, children }) {
         {site.showKOA && (
           <Tarjeta {...p.koa} href={site.koaUrl} linkLabel={p.visit} logo="/clients/koa-logo.png" logoAlt={p.koa.logoAlt} />
         )}
+        {site.xhockUrl && <Tarjeta {...p.xhock} href={site.xhockUrl} linkLabel={p.visit} />}
         <Tarjeta
           {...p.dopta}
           href={site.doptaUrl || undefined}

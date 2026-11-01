@@ -24,6 +24,7 @@ export const site = {
   // Caso KOA: ponlo en false para ocultarlo (por ejemplo mientras KOA confirma el permiso).
   showKOA: true,
   koaUrl: 'https://esports.koa-hub.com/',
+  xhockUrl: 'https://koa-hub.com/tickets/', // venta de boletos XHOCK (en refactorización)
 
   // DOPTA (versión web). Cuando la publiques, pon aquí su URL y aparecerá el enlace "Ver sitio".
   // Para usar su logo: copia el archivo a public/clients/ y escribe la ruta, ej.: '/clients/dopta-logo.png'.
