@@ -14,7 +14,7 @@ export const site = {
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '527204558369', // número personal por ahora; luego se cambiará
 
   // Redes y contacto del pie de página. Los que estén vacíos NO se muestran.
-  instagram: '', // URL completa, ej.: https://www.instagram.com/tu_usuario
+  instagram: 'https://www.instagram.com/hetor1709/', // URL completa
   x: 'https://x.com/HectorH30774339', // URL completa
   email: '',     // ej.: hola@hetor.dev
 
