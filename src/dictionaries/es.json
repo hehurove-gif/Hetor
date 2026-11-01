@@ -154,12 +154,12 @@
         "title": "Uso de base de datos",
         "text": "Para guardar información propia de tu negocio.",
         "label": "uso de base de datos"
+      },
+      "unsure": {
+        "title": "No sé qué necesito",
+        "text": "Prefiero explicarte cómo funciona mi negocio y que me orientes.",
+        "label": "no sé qué necesito"
       }
-    },
-    "hints": {
-      "blockedByDatabase": "No disponible con base de datos",
-      "blockedByStatic": "No disponible con sitio estático",
-      "includedByDatabase": "Incluido con la base de datos"
     },
     "previewLabel": "Tu mensaje",
     "messageTemplate": "Hola Hetor, vi tu página y me interesa un proyecto con: {items}. ¿Podemos platicarlo?",
@@ -167,15 +167,28 @@
     "copy": "Copiar mensaje",
     "copied": "Mensaje copiado",
     "note": "El costo depende de lo que necesites. Cuéntame tu idea y te cotizo.",
-    "pickOne": "Elige al menos una opción para armar tu mensaje."
+    "pickOne": "Elige al menos una opción para armar tu mensaje.",
+    "messageUnsure": "Hola Hetor, vi tu página y todavía no sé qué necesito. Prefiero explicarte cómo funciona mi negocio para que me orientes. ¿Podemos platicarlo?"
   },
   "faq": {
     "eyebrow": "Preguntas",
     "title": "Preguntas frecuentes",
     "items": [
       {
+        "q": "¿Cómo sé qué necesito?",
+        "a": "Piensa en lo que quieres lograr. ¿Mostrar tu negocio y tus datos de contacto? Un sitio estático. ¿Mostrar información que ya vive en otro servicio y cambia seguido (torneos, reseñas, redes)? Uso de APIs. ¿Guardar datos propios, como clientes o pedidos? Base de datos. ¿Que alguien responda o agende por WhatsApp? Chatbot."
+      },
+      {
+        "q": "¿Qué hago si no sé qué necesito?",
+        "a": "Marca «No sé qué necesito» y, en el mensaje, cuéntame cómo funciona tu negocio. Yo te digo qué conviene y qué no."
+      },
+      {
         "q": "¿Qué es Jamstack?",
         "a": "Es una forma de construir sitios: páginas rápidas, generadas con anticipación, que obtienen datos de APIs cuando hace falta en lugar de depender de un servidor pesado con base de datos."
+      },
+      {
+        "q": "¿Qué es una API?",
+        "a": "Es la forma en que tu sitio le pide datos a otro servicio, como torneos, el clima o tus publicaciones, para mostrarlos siempre al día."
       },
       {
         "q": "¿Mi sitio se actualiza solo?",

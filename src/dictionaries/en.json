@@ -154,12 +154,12 @@
         "title": "Database usage",
         "text": "To store your business's own information.",
         "label": "database usage"
+      },
+      "unsure": {
+        "title": "I don't know what I need",
+        "text": "I'd rather explain how my business works and have you guide me.",
+        "label": "I don't know what I need"
       }
-    },
-    "hints": {
-      "blockedByDatabase": "Not available with a database",
-      "blockedByStatic": "Not available with a static site",
-      "includedByDatabase": "Included with the database"
     },
     "previewLabel": "Your message",
     "messageTemplate": "Hi Hetor, I saw your website and I'm interested in a project with: {items}. Can we talk it over?",
@@ -167,15 +167,28 @@
     "copy": "Copy message",
     "copied": "Message copied",
     "note": "The cost depends on what you need. Tell me your idea and I'll send you a quote.",
-    "pickOne": "Choose at least one option to build your message."
+    "pickOne": "Choose at least one option to build your message.",
+    "messageUnsure": "Hi Hetor, I saw your page and I'm not sure what I need yet. I'd rather explain how my business works so you can guide me. Can we talk about it?"
   },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Frequently asked questions",
     "items": [
       {
+        "q": "How do I know what I need?",
+        "a": "Think about what you want to achieve. Show your business and contact details? A static site. Show information that lives in another service and changes often (tournaments, reviews, social posts)? API usage. Store your own data, like customers or orders? A database. Have someone answer or book through WhatsApp? A chatbot."
+      },
+      {
+        "q": "What if I don't know what I need?",
+        "a": "Pick “I don't know what I need” and tell me in the message how your business works. I'll tell you what makes sense and what doesn't."
+      },
+      {
         "q": "What is Jamstack?",
         "a": "It's a way of building websites: fast, pre-generated pages that fetch data from APIs when needed instead of relying on a heavy server with a database."
+      },
+      {
+        "q": "What is an API?",
+        "a": "It's how your site asks another service for data, like tournaments, weather or your posts, so it can always show up-to-date information."
       },
       {
         "q": "Does my site update itself?",
