@@ -10,7 +10,7 @@ export default function PlanBuilder({ dict, lang, whatsappNumber }) {
   const [copiado, setCopiado] = useState(false);
 
   const etiquetas = Object.fromEntries(OPTIONS.map((id) => [id, p.options[id].label]));
-  const mensaje = construirMensaje(seleccion, etiquetas, p.messageTemplate, '', lang);
+  const mensaje = construirMensaje(seleccion, etiquetas, p.messageTemplate, '', lang, p.messageUnsure);
   const hayNumero = Boolean(whatsappLink(whatsappNumber, 'x'));
   const href = seleccion.length > 0 ? whatsappLink(whatsappNumber, mensaje) : null;
   const mostrarEnviar = hayNumero || process.env.NODE_ENV === 'development';
@@ -34,20 +34,20 @@ export default function PlanBuilder({ dict, lang, whatsappNumber }) {
             const o = p.options[id];
             const marcado = seleccion.includes(id);
             const motivo = bloqueo(seleccion, id);
-            const hintId = `hint-${id}`;
             return (
               <label
                 key={id}
                 className={`relative flex min-w-0 gap-3 rounded-2xl border p-4 transition-colors ${
-                  motivo ? 'cursor-not-allowed opacity-60' : 'cursor-pointer hover:border-cyan/60'
-                } ${marcado ? 'border-cyan bg-cyan/10' : 'border-line bg-surface'}`}
+                  motivo
+                    ? 'cursor-not-allowed border-transparent bg-black/10 text-muted dark:bg-black/50'
+                    : `cursor-pointer hover:border-cyan/60 ${marcado ? 'border-cyan bg-cyan/10' : 'border-line bg-surface'}`
+                }`}
               >
                 <input
                   type="checkbox"
                   className="peer sr-only"
                   checked={marcado}
                   disabled={Boolean(motivo)}
-                  aria-describedby={motivo ? hintId : undefined}
                   onChange={() => setSeleccion((s) => alternar(s, id))}
                 />
                 <span
@@ -61,11 +61,6 @@ export default function PlanBuilder({ dict, lang, whatsappNumber }) {
                 <span className="min-w-0">
                   <span className="block font-medium">{o.title}</span>
                   <span className="mt-1 block break-words text-sm text-muted">{o.text}</span>
-                  {motivo && (
-                    <span id={hintId} className="mt-2 block font-mono text-xs text-violet">
-                      {p.hints[motivo]}
-                    </span>
-                  )}
                 </span>
               </label>
             );
