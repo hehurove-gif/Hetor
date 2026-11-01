@@ -68,21 +68,23 @@
     "koa": {
       "tag": "Sitio web · Jamstack",
       "title": "KOA eSports",
-      "text": "Sitio de una organización de eSports (Super Smash Bros. Ultimate). Los torneos se actualizan solos desde la API de Start.gg mediante una función serverless, con caché y manejo de errores.",
+      "text": "Sitio de una organización de eSports. Ejemplo de un sitio estático conectado a una API: los torneos se actualizan solos desde Start.gg mediante una función serverless, con caché y manejo de errores.",
       "stack": [
         "HTML",
         "CSS",
         "JavaScript",
-        "Vercel Serverless",
+        "Serverless",
         "Start.gg API"
       ],
       "logoAlt": "Logo de KOA eSports"
     },
     "dopta": {
-      "tag": "Sitio web",
+      "tag": "Sitio web · En desarrollo",
       "title": "DOPTA",
-      "text": "Versión web de un marketplace de adopción de perros en la Ciudad de México.",
-      "stack": []
+      "text": "Versión web de un marketplace de adopción de perros en la Ciudad de México. Trabajo en progreso: usa base de datos.",
+      "stack": [
+        "Base de datos"
+      ]
     }
   },
   "github": {
@@ -121,9 +123,9 @@
     "eyebrow": "Sobre mí",
     "title": "Hola, soy Hetor",
     "paragraphs": [
-      "Soy desarrollador web. Trabajo con HTML5, CSS, JavaScript y Node.js, y me especializo en sitios Jamstack conectados a APIs.",
-      "Construí el sitio de KOA eSports, donde los torneos se actualizan solos desde Start.gg.",
-      "Esta página está hecha con Next.js y Tailwind CSS."
+      "Soy desarrollador web y estudio programación. Trabajo con HTML5, CSS, JavaScript, Node.js, React, Next.js y Tailwind CSS.",
+      "Me gusta conectar sitios rápidos a APIs y servicios externos para que la información se mantenga al día, y sumar bases de datos o un chatbot de WhatsApp cuando el proyecto lo necesita.",
+      "Mis proyectos son ejemplos de lo que puedo hacer. Esta misma página está hecha con Next.js y Tailwind CSS."
     ],
     "avatarAlt": "Foto de perfil de Hetor"
   },

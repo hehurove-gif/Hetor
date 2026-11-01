@@ -68,21 +68,23 @@
     "koa": {
       "tag": "Website · Jamstack",
       "title": "KOA eSports",
-      "text": "Website for an esports organization (Super Smash Bros. Ultimate). Tournaments update themselves from the Start.gg API through a serverless function, with caching and error handling.",
+      "text": "Website for an eSports organization. An example of a static site connected to an API: tournaments update themselves from Start.gg through a serverless function, with caching and error handling.",
       "stack": [
         "HTML",
         "CSS",
         "JavaScript",
-        "Vercel Serverless",
+        "Serverless",
         "Start.gg API"
       ],
       "logoAlt": "KOA eSports logo"
     },
     "dopta": {
-      "tag": "Website",
+      "tag": "Website · In progress",
       "title": "DOPTA",
-      "text": "Web version of a dog adoption marketplace in Mexico City.",
-      "stack": []
+      "text": "Web version of a dog adoption marketplace in Mexico City. Work in progress: it uses a database.",
+      "stack": [
+        "Database"
+      ]
     }
   },
   "github": {
@@ -121,9 +123,9 @@
     "eyebrow": "About",
     "title": "Hi, I'm Hetor",
     "paragraphs": [
-      "I'm a web developer. I work with HTML5, CSS, JavaScript and Node.js, and I specialize in Jamstack sites connected to APIs.",
-      "I built the KOA eSports website, where tournaments update themselves from Start.gg.",
-      "This page is built with Next.js and Tailwind CSS."
+      "I'm a web developer and a programming student. I work with HTML5, CSS, JavaScript, Node.js, React, Next.js and Tailwind CSS.",
+      "I like connecting fast sites to APIs and external services so the information stays current, and adding databases or a WhatsApp chatbot when a project needs them.",
+      "My projects are examples of what I can do. This very page is built with Next.js and Tailwind CSS."
     ],
     "avatarAlt": "Profile picture of Hetor"
   },
