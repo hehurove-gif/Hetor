@@ -15,7 +15,7 @@ export const site = {
 
   // Redes y contacto del pie de página. Los que estén vacíos NO se muestran.
   instagram: '', // URL completa, ej.: https://www.instagram.com/tu_usuario
-  x: '',         // URL completa, ej.: https://x.com/tu_usuario
+  x: 'https://x.com/HectorH30774339', // URL completa
   email: '',     // ej.: hola@hetor.dev
 
   github: 'hehurove-gif', // usuario cuya lista de repos se muestra en la demo en vivo
