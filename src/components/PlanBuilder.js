@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { OPTIONS, alternar, bloqueo, construirMensaje } from '@/lib/plan';
+import { OPTIONS, alternar, construirMensaje } from '@/lib/plan';
 import { whatsappLink } from '@/lib/whatsapp';
 
 export default function PlanBuilder({ dict, lang, whatsappNumber }) {
@@ -48,14 +48,13 @@ export default function PlanBuilder({ dict, lang, whatsappNumber }) {
           {OPTIONS.map((id) => {
             const o = p.options[id];
             const marcado = seleccion.includes(id);
-            const motivo = bloqueo(seleccion, id);
-            const atenuado = Boolean(motivo) || (id !== 'unsure' && seleccion.includes('unsure'));
+            const atenuado = id !== 'unsure' && seleccion.includes('unsure');
             return (
               <label
                 key={id}
                 className={`relative flex min-w-0 gap-3 rounded-2xl border p-4 transition-colors ${
                   atenuado
-                    ? `border-transparent bg-black/10 text-muted dark:bg-black/50 ${motivo ? 'cursor-not-allowed' : 'cursor-pointer hover:border-cyan/60'}`
+                    ? 'cursor-pointer border-transparent bg-black/10 text-muted hover:border-cyan/60 dark:bg-black/50'
                     : `cursor-pointer hover:border-cyan/60 ${marcado ? 'border-cyan bg-cyan/10' : 'border-line bg-surface'}`
                 }`}
               >
@@ -63,7 +62,6 @@ export default function PlanBuilder({ dict, lang, whatsappNumber }) {
                   type="checkbox"
                   className="peer sr-only"
                   checked={marcado}
-                  disabled={Boolean(motivo)}
                   onChange={() => elegir(id)}
                 />
                 <span

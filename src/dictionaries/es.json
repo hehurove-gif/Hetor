@@ -27,7 +27,7 @@
   "hero": {
     "eyebrow": "Hola, soy Hetor",
     "title": "Desarrollo web Jamstack",
-    "subtitle": "Construyo sitios rápidos que se conectan a APIs para mostrar información al día, sin necesidad de montar y mantener una base de datos.",
+    "subtitle": "Creo sitios web rápidos y claros, y los conecto con otros servicios (mapas, reseñas, clima, redes, pagos) para que tu información siempre se vea al día.",
     "stackLabel": "Trabajo con",
     "stack": [
       "HTML5",
@@ -46,18 +46,23 @@
     "items": [
       {
         "n": "01",
-        "title": "Sitios Jamstack",
-        "text": "Sitios rápidos y fáciles de mantener, listos para publicar."
+        "title": "Sitios web rápidos",
+        "text": "Páginas ligeras que cargan al instante, se ven bien en el celular y son fáciles de mantener."
       },
       {
         "n": "02",
-        "title": "Sitios conectados a APIs",
-        "text": "Información en vivo (torneos, repositorios, clima y más) dentro de tu sitio, con caché y manejo de errores."
+        "title": "Conexión con otros servicios",
+        "text": "Muestro en tu sitio un mapa de Google Maps, tus reseñas, el clima o tus redes sociales, siempre actualizados."
       },
       {
         "n": "03",
+        "title": "Bases de datos",
+        "text": "Guardo y organizo lo de tu negocio: clientes, pedidos o reservas, para consultarlo cuando quieras."
+      },
+      {
+        "n": "04",
         "title": "Chatbot de WhatsApp",
-        "text": "Responde y agenda por WhatsApp cuando tu negocio lo necesite."
+        "text": "Un asistente que contesta preguntas frecuentes y agenda citas mientras tú atiendes tu negocio."
       }
     ]
   },
@@ -103,19 +108,19 @@
     "steps": [
       {
         "title": "Platicamos",
-        "text": "Entiendo tu negocio, qué necesitas mostrar y qué datos ya tienes."
+        "text": "Me cuentas cómo funciona tu negocio y qué quieres lograr."
       },
       {
         "title": "Propuesta",
-        "text": "Te explico qué incluye, tiempos y costo antes de empezar."
+        "text": "Te explico qué incluiría, cuánto tardaría y cuánto costaría, antes de empezar."
       },
       {
         "title": "Construyo",
-        "text": "Te voy mostrando avances para ajustar a tiempo."
+        "text": "Te voy enseñando avances para ajustar a tiempo."
       },
       {
         "title": "Publico y acompaño",
-        "text": "Lo dejamos en línea y resuelvo tus dudas de uso."
+        "text": "Lo dejo en línea y te ayudo con las dudas de uso."
       }
     ]
   },
@@ -123,36 +128,36 @@
     "eyebrow": "Sobre mí",
     "title": "Hola, soy Hetor",
     "paragraphs": [
-      "Soy desarrollador web y estudio programación. Me gusta cuidar un proyecto de principio a fin.",
-      "Busco que un sitio sea rápido, claro y fácil de mantener, y sumo bases de datos o un chatbot cuando de verdad ayudan.",
-      "Mis proyectos son ejemplos de lo que puedo hacer. Esta misma página está hecha con Next.js y Tailwind CSS."
+      "Soy desarrollador web y sigo estudiando programación. Me gusta acompañar un proyecto de principio a fin.",
+      "Busco sitios rápidos, claros y fáciles de mantener, y explico lo técnico con palabras simples.",
+      "Los proyectos de arriba son ejemplos de lo que puedo hacer. Esta página también la hice yo, con Next.js y Tailwind CSS."
     ],
     "avatarAlt": "Foto de perfil de Hetor"
   },
   "packages": {
     "eyebrow": "Planes",
     "title": "Arma tu proyecto",
-    "intro": "Marca lo que necesitas y te preparo el mensaje para platicarlo por WhatsApp.",
+    "intro": "Marca lo que crees necesitar y preparo el mensaje para platicarlo por WhatsApp.",
     "legend": "¿Qué incluiría tu proyecto?",
     "options": {
       "static": {
         "title": "Sitio estático",
-        "text": "Informativo: tu negocio, servicios y contacto.",
+        "text": "Tu negocio en línea: quién eres, qué ofreces y cómo contactarte.",
         "label": "sitio estático"
       },
       "api": {
         "title": "Uso de APIs",
-        "text": "Datos de otros servicios, siempre al día.",
+        "text": "Mapas, reseñas, clima o redes sociales mostrados al día.",
         "label": "uso de APIs"
       },
       "chatbot": {
         "title": "Chatbot",
-        "text": "Responde dudas o agenda citas.",
+        "text": "Responde preguntas y agenda citas por WhatsApp.",
         "label": "chatbot de WhatsApp"
       },
       "database": {
         "title": "Uso de base de datos",
-        "text": "Guarda clientes, pedidos o lo que necesites.",
+        "text": "Guarda clientes, pedidos o reservas y los consulta cuando quieras.",
         "label": "uso de base de datos"
       },
       "unsure": {
@@ -176,35 +181,23 @@
     "items": [
       {
         "q": "¿Cómo sé qué necesito?",
-        "a": "Piensa en lo que quieres lograr. ¿Mostrar tu negocio y tus datos de contacto? Un sitio estático. ¿Mostrar información que ya vive en otro servicio y cambia seguido (torneos, reseñas, redes)? Uso de APIs. ¿Guardar datos propios, como clientes o pedidos? Base de datos. ¿Que alguien responda o agende por WhatsApp? Chatbot."
-      },
-      {
-        "q": "¿Qué hago si no sé qué necesito?",
-        "a": "Marca «No sé qué necesito» y, en el mensaje, cuéntame cómo funciona tu negocio. Yo te digo qué conviene y qué no."
+        "a": "Empieza por lo que quieres lograr. ¿Presentar tu negocio y que te contacten? Un sitio estático. ¿Mostrar un mapa, reseñas o redes que ya existen en otros lugares? Uso de APIs. ¿Registrar clientes, pedidos o reservas? Base de datos. ¿Que alguien responda por ti en WhatsApp? Chatbot. Si aun así dudas, marca «No sé qué necesito» y cuéntame cómo funciona tu negocio."
       },
       {
         "q": "¿Qué es Jamstack?",
-        "a": "Es una forma de construir sitios: páginas rápidas, generadas con anticipación, que obtienen datos de APIs cuando hace falta en lugar de depender de un servidor pesado con base de datos."
+        "a": "Es una forma moderna de hacer sitios: las páginas se preparan de antemano, así cargan muy rápido, son más seguras y cuestan poco de mantener. Cuando necesitan información nueva, la piden a otros servicios."
       },
       {
-        "q": "¿Qué es una API?",
-        "a": "Es la forma en que tu sitio le pide datos a otro servicio, como torneos, el clima o tus publicaciones, para mostrarlos siempre al día."
+        "q": "¿Qué es una API y para qué sirve?",
+        "a": "Es un puente entre tu sitio y otro servicio. Con una API puedo mostrar un mapa de Google Maps, tus reseñas, el clima o tus últimas publicaciones, y se actualizan solos sin que tú hagas nada."
       },
       {
-        "q": "¿Mi sitio se actualiza solo?",
-        "a": "Si se conecta a una API (por ejemplo torneos o repositorios), sí: la información se refresca automáticamente cada cierto tiempo."
+        "q": "¿Para qué sirve una base de datos?",
+        "a": "Para guardar información propia de tu negocio, como clientes, pedidos o reservas, y consultarla o editarla cuando quieras. Si tu sitio solo muestra información, no hace falta; si necesitas registrar datos, es lo ideal."
       },
       {
-        "q": "¿Necesito una base de datos?",
-        "a": "No siempre. Muchos sitios funcionan solo con APIs. Si tu proyecto necesita guardar información propia, lo platicamos."
-      },
-      {
-        "q": "¿Puedes hacer un chatbot de WhatsApp?",
-        "a": "Sí, pero solo cuando tu negocio realmente lo necesita, por ejemplo para atender dudas o agendar citas."
-      },
-      {
-        "q": "¿Cómo empezamos?",
-        "a": "Escríbeme por WhatsApp con una idea general de lo que necesitas y te respondo con preguntas para entender el proyecto."
+        "q": "¿Qué hace un chatbot de WhatsApp?",
+        "a": "Contesta por ti las preguntas más comunes (horarios, precios, ubicación) y puede agendar citas a cualquier hora. Tú sigues hablando con tus clientes cuando quieras."
       }
     ]
   },
