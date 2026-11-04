@@ -14,7 +14,8 @@
     "projects": "Projects",
     "about": "About",
     "packages": "Packages",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "tools": "Tools"
   },
   "cta": {
     "whatsapp": "Let's talk on WhatsApp",
@@ -238,5 +239,30 @@
   "og": {
     "alt": "Hetor, Jamstack web development",
     "tagline": "Jamstack web development"
+  },
+  "tools": {
+    "eyebrow": "Tools",
+    "title": "Free, in your browser",
+    "open": "Open tool",
+    "qr": {
+      "tag": "Utility · Free",
+      "title": "QR generator",
+      "text": "Create QR codes with your logo, gradients and custom shapes, and download them ready to use.",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind"
+      ]
+    },
+    "svg": {
+      "tag": "Utility · Free",
+      "title": "Image to SVG",
+      "text": "Turn an image into a vector, remove the background and recolor each area. Everything runs in your browser: your image is never uploaded to a server.",
+      "stack": [
+        "React",
+        "Vite",
+        "Web Workers"
+      ]
+    }
   }
 }

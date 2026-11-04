@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import Projects from '@/components/Projects';
+import Tools from '@/components/Tools';
 import GithubDemo from '@/components/GithubDemo';
 import Process from '@/components/Process';
 import About from '@/components/About';
@@ -26,13 +27,14 @@ export default async function Home({ params }) {
 
   return (
     <>
-      <Header lang={lang} locales={site.locales} dict={dict} brand={site.name} whatsapp={whatsapp} />
+      <Header lang={lang} locales={site.locales} dict={dict} brand={site.name} whatsapp={whatsapp} showTools={site.toolsEnabled} />
       <main id="main">
         <Hero dict={dict} whatsapp={whatsapp} />
         <Services dict={dict} />
         <Projects dict={dict}>
           <GithubDemo dict={dict} lang={lang} />
         </Projects>
+        {site.toolsEnabled && <Tools dict={dict} />}
         <About dict={dict} />
         <Process dict={dict} />
         <Packages dict={dict} lang={lang} />

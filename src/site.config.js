@@ -30,4 +30,12 @@ export const site = {
   // Para usar su logo: copia el archivo a public/clients/ y escribe la ruta, ej.: '/clients/dopta-logo.png'.
   doptaUrl: '',
   doptaLogo: '/clients/dopta-logo.svg',
+
+  // Herramientas en hetor.dev/tools/<herramienta> (cada una es su propio repo y Worker).
+  // Déjalo en false hasta comprar el dominio y activar las rutas (ver wrangler.domain.jsonc).
+  toolsEnabled: false,
+  tools: [
+    { id: 'qr', path: '/tools/qr/' },
+    { id: 'svg', path: '/tools/svg/' },
+  ],
 };

@@ -1,0 +1,17 @@
+{
+  // Configuración para cuando hetor.dev ya esté en tu cuenta de Cloudflare.
+  // Se usa con: npx wrangler deploy -c wrangler.domain.jsonc
+  // (en Cloudflare: Settings → Build → Deploy command). Mientras tanto sigue usándose wrangler.jsonc.
+  "name": "hetor",
+  "compatibility_date": "2026-10-31",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+  // El Worker de Hetor atiende todo hetor.dev. Las herramientas (/tools/qr*, /tools/svg*) se enganchan
+  // con rutas en sus propios Workers y tienen prioridad sobre este dominio.
+  "routes": [{ "pattern": "hetor.dev", "custom_domain": true }],
+  "observability": {
+    "logs": { "enabled": true, "invocation_logs": true, "persist": true }
+  }
+}

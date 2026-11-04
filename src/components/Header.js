@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import Cta from '@/components/Cta';
 
 const SECCIONES = ['services', 'projects', 'about', 'packages', 'faq'];
+const SECCIONES_CON_TOOLS = ['services', 'projects', 'tools', 'about', 'packages', 'faq'];
 
 /* Guarda qué sección se está viendo antes de cambiar de idioma (la lee RestoreScroll). */
 function guardarPosicion() {
@@ -16,7 +17,8 @@ function guardarPosicion() {
   } catch {}
 }
 
-export default function Header({ lang, locales, dict, brand, whatsapp }) {
+export default function Header({ lang, locales, dict, brand, whatsapp, showTools = false }) {
+  const secciones = showTools ? SECCIONES_CON_TOOLS : SECCIONES;
   const [abierto, setAbierto] = useState(false);
   const pathname = usePathname() || `/${lang}`;
   const resto = pathname.replace(/^\/[^/]+/, '');
@@ -31,7 +33,7 @@ export default function Header({ lang, locales, dict, brand, whatsapp }) {
         </Link>
 
         <nav aria-label="Principal" className="hidden items-center gap-6 lg:flex">
-          {SECCIONES.map((id) => (
+          {secciones.map((id) => (
             <a key={id} href={`#${id}`} className="whitespace-nowrap text-sm text-muted transition-colors hover:text-fg">
               {dict.nav[id]}
             </a>
@@ -79,7 +81,7 @@ export default function Header({ lang, locales, dict, brand, whatsapp }) {
       {abierto && (
         <nav id="menu-movil" aria-label="Principal" className="border-t border-line bg-bg lg:hidden">
           <ul className="mx-auto flex max-w-6xl flex-col px-5 py-3 sm:px-8">
-            {SECCIONES.map((id) => (
+            {secciones.map((id) => (
               <li key={id}>
                 <a href={`#${id}`} onClick={() => setAbierto(false)} className="block py-2.5 text-muted hover:text-fg">
                   {dict.nav[id]}

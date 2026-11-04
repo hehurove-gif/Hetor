@@ -14,7 +14,8 @@
     "projects": "Proyectos",
     "about": "Sobre mí",
     "packages": "Paquetes",
-    "faq": "Preguntas"
+    "faq": "Preguntas",
+    "tools": "Herramientas"
   },
   "cta": {
     "whatsapp": "Hablemos por WhatsApp",
@@ -238,5 +239,30 @@
   "og": {
     "alt": "Hetor, desarrollo web Jamstack",
     "tagline": "Desarrollo web Jamstack"
+  },
+  "tools": {
+    "eyebrow": "Herramientas",
+    "title": "Gratis, en tu navegador",
+    "open": "Abrir herramienta",
+    "qr": {
+      "tag": "Utilidad · Gratis",
+      "title": "Generador de QR",
+      "text": "Crea códigos QR con tu logo, degradados y formas personalizadas, y descárgalos listos para usar.",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind"
+      ]
+    },
+    "svg": {
+      "tag": "Utilidad · Gratis",
+      "title": "Imagen a SVG",
+      "text": "Convierte una imagen en vector, quita el fondo y cambia los colores de cada zona. Todo ocurre en tu navegador: tu imagen no se sube a ningún servidor.",
+      "stack": [
+        "React",
+        "Vite",
+        "Web Workers"
+      ]
+    }
   }
 }
