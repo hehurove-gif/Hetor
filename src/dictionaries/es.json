@@ -263,6 +263,16 @@
         "Vite",
         "Web Workers"
       ]
+    },
+    "bracket": {
+      "tag": "Utilidad · Gratis",
+      "title": "Generador de brackets",
+      "text": "Crea torneos de eliminación simple o doble, round robin o suizo sin que nadie tenga que registrarse. Ajusta el seeding, simula cómo quedaría y reporta marcadores.",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind"
+      ]
     }
   }
 }

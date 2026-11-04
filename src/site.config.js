@@ -37,5 +37,6 @@ export const site = {
   tools: [
     { id: 'qr', path: '/tools/qr/' },
     { id: 'svg', path: '/tools/svg/' },
+    { id: 'bracket', path: '/tools/bracket/' },
   ],
 };

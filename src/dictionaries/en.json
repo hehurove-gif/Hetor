@@ -263,6 +263,16 @@
         "Vite",
         "Web Workers"
       ]
+    },
+    "bracket": {
+      "tag": "Utility · Free",
+      "title": "Bracket generator",
+      "text": "Run single or double elimination, round robin or Swiss tournaments without anyone needing an account. Tweak the seeding, simulate how it would play out and report scores.",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind"
+      ]
     }
   }
 }
