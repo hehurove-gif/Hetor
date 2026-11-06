@@ -31,12 +31,14 @@ export const site = {
   doptaUrl: '',
   doptaLogo: '/clients/dopta-logo.svg',
 
-  // Herramientas en hetor.dev/tools/<herramienta> (cada una es su propio repo y Worker).
-  // Déjalo en false hasta comprar el dominio y activar las rutas (ver wrangler.domain.jsonc).
+  // Herramientas públicas y de código abierto (cada una es su propio repo y Worker).
+  // `url` es donde viven hoy; `path` es la ruta final en hetor.dev/tools/<herramienta>.
+  // Mientras `toolsEnabled` sea false se enlaza a `url`. Al comprar el dominio y activar las rutas
+  // (ver wrangler.domain.jsonc), ponlo en true y los enlaces pasan a `path`.
   toolsEnabled: false,
   tools: [
-    { id: 'qr', path: '/tools/qr/' },
-    { id: 'svg', path: '/tools/svg/' },
-    { id: 'bracket', path: '/tools/bracket/' },
+    { id: 'bracket', path: '/tools/bracket/', url: 'https://bracket-generator.hehurove.workers.dev/', repo: 'Bracket-Generator' },
+    { id: 'qr', path: '/tools/qr/', url: 'https://qr.hehurove.workers.dev/', repo: 'QR' },
+    { id: 'svg', path: '/tools/svg/', url: 'https://svg-converter.hehurove.workers.dev/', repo: 'SVG-Converter' },
   ],
 };

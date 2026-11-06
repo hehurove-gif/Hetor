@@ -234,7 +234,9 @@
     "nav": "Sections",
     "contact": "Contact",
     "social": "Social",
-    "whatsapp": "Message me on WhatsApp"
+    "whatsapp": "Message me on WhatsApp",
+    "developedBy": "Developed by",
+    "tools": "Tools"
   },
   "og": {
     "alt": "Hetor, Jamstack web development",
@@ -242,7 +244,7 @@
   },
   "tools": {
     "eyebrow": "Tools",
-    "title": "Free, in your browser",
+    "title": "Public, open-source tools",
     "open": "Open tool",
     "qr": {
       "tag": "Utility · Free",
@@ -273,6 +275,12 @@
         "Vite",
         "Tailwind"
       ]
-    }
+    },
+    "intro": "These are tools I built and left open for anyone: free, no account needed, and they run in your browser. The code is public, so you can use them, read them or suggest improvements on GitHub.",
+    "code": "View code",
+    "back": "← Back to home",
+    "openSource": "Open source",
+    "metaTitle": "Tools | Hetor’s public tools",
+    "metaDescription": "Free, open-source tools: bracket generator, QR code generator and image to SVG with color editing."
   }
 }

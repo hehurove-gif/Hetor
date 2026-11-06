@@ -19,7 +19,7 @@ function Icono({ src, label, href }) {
   );
 }
 
-export default function Footer({ dict }) {
+export default function Footer({ dict, lang }) {
   const f = dict.footer;
   const wa = whatsappLink(site.whatsapp, dict.whatsappMessage);
   const redes = [
@@ -42,11 +42,16 @@ export default function Footer({ dict }) {
           <ul className="mt-3 space-y-2 text-muted">
             {SECCIONES.map((id) => (
               <li key={id}>
-                <a href={`#${id}`} className="hover:text-fg">
+                <a href={`/${lang}#${id}`} className="hover:text-fg">
                   {dict.nav[id]}
                 </a>
               </li>
             ))}
+            <li>
+              <a href={`/${lang}/tools`} className="hover:text-fg">
+                {dict.nav.tools}
+              </a>
+            </li>
           </ul>
         </nav>
 

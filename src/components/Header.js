@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 import Cta from '@/components/Cta';
 
 const SECCIONES = ['services', 'projects', 'about', 'packages', 'faq'];
-const SECCIONES_CON_TOOLS = ['services', 'projects', 'tools', 'about', 'packages', 'faq'];
 
 /* Guarda qué sección se está viendo antes de cambiar de idioma (la lee RestoreScroll). */
 function guardarPosicion() {
@@ -17,11 +16,18 @@ function guardarPosicion() {
   } catch {}
 }
 
-export default function Header({ lang, locales, dict, brand, whatsapp, showTools = false }) {
-  const secciones = showTools ? SECCIONES_CON_TOOLS : SECCIONES;
+export default function Header({ lang, locales, dict, brand, whatsapp }) {
   const [abierto, setAbierto] = useState(false);
   const pathname = usePathname() || `/${lang}`;
   const resto = pathname.replace(/^\/[^/]+/, '');
+  // En el inicio las secciones son anclas de la misma página; en otras páginas (p. ej. /tools) llevan al inicio.
+  const enInicio = resto === '' || resto === '/';
+  const anchor = (id) => (enInicio ? `#${id}` : `/${lang}#${id}`);
+  const toolsHref = `/${lang}/tools`;
+  const enTools = resto.startsWith('/tools');
+  const claseTools = `whitespace-nowrap rounded-full border px-3 py-1 text-sm transition-colors ${
+    enTools ? 'border-cyan text-cyan' : 'border-line text-muted hover:border-cyan/60 hover:text-fg'
+  }`;
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-bg/80 backdrop-blur">
@@ -33,11 +39,14 @@ export default function Header({ lang, locales, dict, brand, whatsapp, showTools
         </Link>
 
         <nav aria-label="Principal" className="hidden items-center gap-6 lg:flex">
-          {secciones.map((id) => (
-            <a key={id} href={`#${id}`} className="whitespace-nowrap text-sm text-muted transition-colors hover:text-fg">
+          {SECCIONES.map((id) => (
+            <a key={id} href={anchor(id)} className="whitespace-nowrap text-sm text-muted transition-colors hover:text-fg">
               {dict.nav[id]}
             </a>
           ))}
+          <Link href={toolsHref} aria-current={enTools ? 'page' : undefined} className={claseTools}>
+            {dict.nav.tools}
+          </Link>
         </nav>
 
         <div className="flex items-center gap-3">
@@ -81,13 +90,18 @@ export default function Header({ lang, locales, dict, brand, whatsapp, showTools
       {abierto && (
         <nav id="menu-movil" aria-label="Principal" className="border-t border-line bg-bg lg:hidden">
           <ul className="mx-auto flex max-w-6xl flex-col px-5 py-3 sm:px-8">
-            {secciones.map((id) => (
+            {SECCIONES.map((id) => (
               <li key={id}>
-                <a href={`#${id}`} onClick={() => setAbierto(false)} className="block py-2.5 text-muted hover:text-fg">
+                <a href={anchor(id)} onClick={() => setAbierto(false)} className="block py-2.5 text-muted hover:text-fg">
                   {dict.nav[id]}
                 </a>
               </li>
             ))}
+            <li>
+              <Link href={toolsHref} onClick={() => setAbierto(false)} aria-current={enTools ? 'page' : undefined} className="block py-2.5 font-medium text-cyan hover:underline">
+                {dict.nav.tools}
+              </Link>
+            </li>
             <li className="py-2.5 sm:hidden">
               <Cta href={whatsapp} label={dict.cta.whatsappShort} hint={dict.cta.missing} />
             </li>

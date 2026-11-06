@@ -15,7 +15,7 @@
     "about": "Sobre mí",
     "packages": "Paquetes",
     "faq": "Preguntas",
-    "tools": "Herramientas"
+    "tools": "Tools"
   },
   "cta": {
     "whatsapp": "Hablemos por WhatsApp",
@@ -234,15 +234,17 @@
     "nav": "Secciones",
     "contact": "Contacto",
     "social": "Redes",
-    "whatsapp": "Escríbeme por WhatsApp"
+    "whatsapp": "Escríbeme por WhatsApp",
+    "developedBy": "Desarrollado por",
+    "tools": "Tools"
   },
   "og": {
     "alt": "Hetor, desarrollo web Jamstack",
     "tagline": "Desarrollo web Jamstack"
   },
   "tools": {
-    "eyebrow": "Herramientas",
-    "title": "Gratis, en tu navegador",
+    "eyebrow": "Tools",
+    "title": "Herramientas públicas y de código abierto",
     "open": "Abrir herramienta",
     "qr": {
       "tag": "Utilidad · Gratis",
@@ -273,6 +275,12 @@
         "Vite",
         "Tailwind"
       ]
-    }
+    },
+    "intro": "Son herramientas que hice yo y dejé abiertas para cualquiera: gratis, sin cuenta y funcionan en tu navegador. Su código es público, así que puedes usarlas, revisarlas o proponer mejoras en GitHub.",
+    "code": "Ver código",
+    "back": "← Volver al inicio",
+    "openSource": "Código abierto",
+    "metaTitle": "Tools | Herramientas públicas de Hetor",
+    "metaDescription": "Herramientas gratuitas y de código abierto: generador de brackets, generador de QR e imagen a SVG con edición de colores."
   }
 }
