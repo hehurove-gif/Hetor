@@ -7,7 +7,7 @@ export default function Tools({ dict }) {
   const t = dict.tools;
   return (
     <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-      {site.tools.map(({ id, path, url, repo }) => {
+      {site.tools.map(({ id, path, url, repo, live = true }) => {
         const tool = t[id];
         const href = site.toolsEnabled ? path : url;
         return (
@@ -25,9 +25,13 @@ export default function Tools({ dict }) {
               ))}
             </ul>
             <div className="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2 pt-6 text-sm font-medium">
-              <a href={href} className="inline-flex items-center gap-1 text-cyan hover:underline">
-                {t.open} <span aria-hidden="true">→</span>
-              </a>
+              {live ? (
+                <a href={href} className="inline-flex items-center gap-1 text-cyan hover:underline">
+                  {t.open} <span aria-hidden="true">→</span>
+                </a>
+              ) : (
+                <span className="inline-flex items-center rounded-full border border-line px-3 py-0.5 font-mono text-xs text-muted">{t.soon}</span>
+              )}
               <a
                 href={`https://github.com/${site.github}/${repo}`}
                 target="_blank"

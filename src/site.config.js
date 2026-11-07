@@ -40,5 +40,8 @@ export const site = {
     { id: 'bracket', path: '/tools/bracket/', url: 'https://bracket-generator.hehurove.workers.dev/', repo: 'Bracket-Generator' },
     { id: 'qr', path: '/tools/qr/', url: 'https://qr.hehurove.workers.dev/', repo: 'QR' },
     { id: 'svg', path: '/tools/svg/', url: 'https://svg-converter.hehurove.workers.dev/', repo: 'SVG-Converter' },
+    // live: false muestra "Próximamente" y oculta el enlace de apertura. Cambia a true cuando el Worker ya sirva la app.
+    { id: 'palette', path: '/tools/palette/', url: 'https://image-to-palette.hehurove.workers.dev/', repo: 'Image-to-palette', live: false },
+    { id: 'markdown', path: '/tools/markdown/', url: 'https://markdown-md-converter.hehurove.workers.dev/', repo: 'MarkDown-MD-Converter', live: false },
   ],
 };

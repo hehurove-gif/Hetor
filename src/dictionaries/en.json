@@ -282,6 +282,27 @@
     "back": "← Back to home",
     "openSource": "Open source",
     "metaTitle": "Tools | Hetor’s public tools",
-    "metaDescription": "Free, open-source tools: bracket generator, QR code generator and image to SVG with color editing."
+    "metaDescription": "Free, open-source tools: bracket generator, QR code generator, image to SVG, image to color palette and documents to Markdown.",
+    "soon": "Coming soon",
+    "palette": {
+      "tag": "Utility · Free",
+      "title": "Image to color palette",
+      "text": "Upload an image and get its real colors, not blends, with gradients detected properly. Copy the HEX codes or download the palette as .ASE for Photoshop and Illustrator. Your image never leaves your browser.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    "markdown": {
+      "tag": "Utility · Free",
+      "title": "Documents to Markdown",
+      "text": "Convert PDF, Word, TXT and images (with OCR) to clean Markdown, with headings, lists and tables, so AIs read it with less noise and fewer tokens. Everything happens in your browser.",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind"
+      ]
+    }
   }
 }

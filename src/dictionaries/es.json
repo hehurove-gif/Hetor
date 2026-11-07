@@ -282,6 +282,27 @@
     "back": "← Volver al inicio",
     "openSource": "Código abierto",
     "metaTitle": "Tools | Herramientas públicas de Hetor",
-    "metaDescription": "Herramientas gratuitas y de código abierto: generador de brackets, generador de QR e imagen a SVG con edición de colores."
+    "metaDescription": "Herramientas gratuitas y de código abierto: generador de brackets, generador de QR, imagen a SVG, imagen a paleta de colores y documentos a Markdown.",
+    "soon": "Próximamente",
+    "palette": {
+      "tag": "Utilidad · Gratis",
+      "title": "Imagen a paleta de colores",
+      "text": "Sube una imagen y obtén sus colores reales, no mezclas, con los degradados bien detectados. Copia los códigos HEX o descarga la paleta en .ASE para Photoshop e Illustrator. Tu imagen no sale de tu navegador.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    "markdown": {
+      "tag": "Utilidad · Gratis",
+      "title": "Documentos a Markdown",
+      "text": "Convierte PDF, Word, TXT e imágenes (con OCR) a Markdown limpio, con títulos, listas y tablas, para que las IAs lo lean con menos ruido y menos tokens. Todo ocurre en tu navegador.",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind"
+      ]
+    }
   }
 }
