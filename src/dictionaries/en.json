@@ -120,7 +120,10 @@
     "error": "I couldn't load the repositories right now. Please try again later.",
     "noDescription": "No description",
     "updated": "Updated",
-    "profile": "View GitHub profile"
+    "profile": "View GitHub profile",
+    "pagination": "Repository pagination",
+    "prev": "Previous repositories",
+    "next": "More repositories"
   },
   "process": {
     "eyebrow": "Process",

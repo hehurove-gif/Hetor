@@ -120,7 +120,10 @@
     "error": "No pude cargar los repositorios en este momento. Intenta de nuevo más tarde.",
     "noDescription": "Sin descripción",
     "updated": "Actualizado",
-    "profile": "Ver perfil en GitHub"
+    "profile": "Ver perfil en GitHub",
+    "pagination": "Paginación de repositorios",
+    "prev": "Repositorios anteriores",
+    "next": "Más repositorios"
   },
   "process": {
     "eyebrow": "Proceso",

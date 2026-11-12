@@ -1,7 +1,7 @@
 import { site } from '@/site.config';
 
-/** Normaliza la respuesta de la API de GitHub: sin forks ni archivados, más recientes primero, máximo 6. */
-export function normalizarRepos(datos, limite = 6) {
+/** Normaliza la respuesta de la API de GitHub: sin forks ni archivados, más recientes primero, hasta 100 (la paginación se hace en la interfaz). */
+export function normalizarRepos(datos, limite = 100) {
   if (!Array.isArray(datos)) return [];
   return datos
     .filter((r) => r && typeof r.name === 'string' && !r.fork && !r.archived && typeof r.html_url === 'string' && r.html_url.startsWith('https://github.com/'))
