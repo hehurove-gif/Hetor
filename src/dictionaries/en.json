@@ -306,6 +306,12 @@
         "Vite",
         "Tailwind"
       ]
+    },
+    "brickout": {
+      "tag": "Game · Free",
+      "title": "Brick Out",
+      "text": "A brick-and-ball game I use as a background for my TikTok videos. Open it and play whenever you like.",
+      "stack": []
     }
   }
 }

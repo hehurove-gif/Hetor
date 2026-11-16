@@ -42,6 +42,7 @@ export const site = {
     { id: 'svg', path: '/tools/svg/', url: 'https://svg-converter.hehurove.workers.dev/', repo: 'SVG-Converter' },
     // live: false muestra "Próximamente" y oculta el enlace de apertura. Cambia a true cuando el Worker ya sirva la app.
     { id: 'palette', path: '/tools/palette/', url: 'https://image-to-palette.hehurove.workers.dev/', repo: 'Image-to-palette', live: false },
-    { id: 'markdown', path: '/tools/markdown/', url: 'https://markdown-md-converter.hehurove.workers.dev/', repo: 'MarkDown-MD-Converter', live: false },
+    { id: 'markdown', path: '/tools/markdown/', url: 'https://markdown-md-converter.hehurove.workers.dev/', repo: 'MarkDown-MD-Converter' },
+    { id: 'brickout', path: '/tools/brick-out/', url: 'https://brick-out.hehurove.workers.dev/', repo: 'Brick-Out' },
   ],
 };

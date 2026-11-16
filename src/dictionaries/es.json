@@ -306,6 +306,12 @@
         "Vite",
         "Tailwind"
       ]
+    },
+    "brickout": {
+      "tag": "Juego · Gratis",
+      "title": "Brick Out",
+      "text": "Juego de bloques y pelota que uso como fondo para mis videos de TikTok. Ábrelo y juégalo cuando quieras.",
+      "stack": []
     }
   }
 }
