@@ -115,7 +115,7 @@
   "github": {
     "eyebrow": "Live",
     "title": "My GitHub repositories",
-    "text": "This section is built from the GitHub API every time I publish a new version of the site.",
+    "text": "This list comes from the GitHub API and is refreshed every time I publish a new version of the site. It only shows my public repositories.",
     "empty": "There are no public repositories to show yet.",
     "error": "I couldn't load the repositories right now. Please try again later.",
     "noDescription": "No description",

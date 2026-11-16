@@ -115,7 +115,7 @@
   "github": {
     "eyebrow": "En vivo",
     "title": "Mis repositorios en GitHub",
-    "text": "Esta sección se genera con la API de GitHub cada vez que publico una nueva versión del sitio.",
+    "text": "Esta lista se toma de la API de GitHub y se actualiza cada vez que publico una nueva versión del sitio. Solo muestra mis repositorios públicos.",
     "empty": "Todavía no hay repositorios públicos para mostrar.",
     "error": "No pude cargar los repositorios en este momento. Intenta de nuevo más tarde.",
     "noDescription": "Sin descripción",
