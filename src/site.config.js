@@ -16,6 +16,7 @@ export const site = {
   // Redes y contacto del pie de página. Los que estén vacíos NO se muestran.
   instagram: 'https://www.instagram.com/hetor1709/', // URL completa
   x: 'https://x.com/HectorH30774339', // URL completa
+  linkedin: 'https://www.linkedin.com/in/romero-velazquez-h-6939a73b1/', // URL completa
   email: '',     // ej.: hola@hetor.dev
 
   github: 'hehurove-gif', // usuario cuya lista de repos se muestra en la demo en vivo

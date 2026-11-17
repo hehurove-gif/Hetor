@@ -26,6 +26,7 @@ export default function Footer({ dict, lang }) {
     wa && { src: '/social/whatsapp.png', label: 'WhatsApp', href: wa },
     site.instagram && { src: '/social/instagram.png', label: 'Instagram', href: site.instagram },
     site.x && { src: '/social/x.png', label: 'X', href: site.x },
+    site.linkedin && { src: '/social/linkedin.png', label: 'LinkedIn', href: site.linkedin },
   ].filter(Boolean);
 
   return (
