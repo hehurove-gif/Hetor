@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Cta from '@/components/Cta';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const SECCIONES = ['services', 'projects', 'about', 'packages', 'faq'];
 
@@ -67,6 +68,8 @@ export default function Header({ lang, locales, dict, brand, whatsapp }) {
               </Link>
             ))}
           </div>
+
+          <ThemeToggle dict={dict} />
 
           <div className="hidden shrink-0 sm:block">
             <Cta href={whatsapp} label={dict.cta.whatsappShort} hint={dict.cta.missing} />

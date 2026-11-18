@@ -27,6 +27,7 @@ export default function Footer({ dict, lang }) {
     site.instagram && { src: '/social/instagram.png', label: 'Instagram', href: site.instagram },
     site.x && { src: '/social/x.png', label: 'X', href: site.x },
     site.linkedin && { src: '/social/linkedin.png', label: 'LinkedIn', href: site.linkedin },
+    site.github && { src: '/social/github.png', label: 'GitHub', href: `https://github.com/${site.github}` },
   ].filter(Boolean);
 
   return (
@@ -68,11 +69,6 @@ export default function Footer({ dict, lang }) {
             </ul>
           )}
           <ul className="mt-4 space-y-2 text-muted">
-            <li>
-              <a href={`https://github.com/${site.github}`} target="_blank" rel="noopener noreferrer" className="hover:text-fg">
-                GitHub ↗
-              </a>
-            </li>
             {site.email && (
               <li>
                 <a href={`mailto:${site.email}`} className="break-all hover:text-fg">

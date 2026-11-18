@@ -40,7 +40,15 @@ export default async function RootLayout({ children, params }) {
   const dict = await getDictionary(lang);
 
   return (
-    <html lang={lang}>
+    <html lang={lang} suppressHydrationWarning>
+      <head>
+        {/* Aplica el tema elegido con el botón sol/luna antes del primer pintado (sin parpadeo). */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body className="min-h-screen antialiased">
         {/* Recuerda el idioma elegido (lo lee public/index.html al entrar a "/"). */}
         <script dangerouslySetInnerHTML={{ __html: `try{localStorage.setItem('lang','${lang}')}catch(e){}` }} />

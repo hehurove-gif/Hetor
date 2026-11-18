@@ -7,7 +7,10 @@
     "skip": "Skip to content",
     "menu": "Menu",
     "language": "Language",
-    "home": "Hetor, home"
+    "home": "Hetor, home",
+    "theme": "Toggle theme",
+    "themeToLight": "Switch to light mode",
+    "themeToDark": "Switch to dark mode"
   },
   "nav": {
     "services": "Services",
