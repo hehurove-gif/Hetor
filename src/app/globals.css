@@ -4,7 +4,7 @@
    del encabezado lo puede forzar con <html data-theme="light|dark"> (ver ThemeToggle y layout).
    Oscuro: fondo oscuro con acentos neón cian y violeta usados con moderación.
    Claro: paleta de PETCA (celeste, azul y naranja). Los nombres --cyan y --violet se conservan:
-   en modo claro "cyan" es el azul #2a74ad y "violet" el naranja #c46f12. */
+   en modo claro "cyan" es el azul #2a74ad y "violet" el naranja #a85a0a (PETCA #c46f12 oscurecido para que el texto cumpla contraste AA). */
 :root {
   --bg: #0a0c10;
   --bg-soft: #0f1218;
@@ -28,7 +28,7 @@
     --fg: #1f3b57;
     --muted: #2c5c8a;
     --cyan: #2a74ad;
-    --violet: #c46f12;
+    --violet: #a85a0a;
     --on-accent: #ffffff;
     --glow: 12%;
     color-scheme: light;
@@ -44,7 +44,7 @@
   --fg: #1f3b57;
   --muted: #2c5c8a;
   --cyan: #2a74ad;
-  --violet: #c46f12;
+  --violet: #a85a0a;
   --on-accent: #ffffff;
   --glow: 12%;
   color-scheme: light;
